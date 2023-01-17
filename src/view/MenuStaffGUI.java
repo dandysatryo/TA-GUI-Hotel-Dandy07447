@@ -25,8 +25,8 @@ public class MenuStaffGUI extends JFrame {
         getContentPane().setBackground(Color.yellow);
 
         admin = new JLabel("Staff Hotel");
-        admin.setBounds(225, 30, 200, 30);
-        admin.setFont(new Font("Times New Roman", Font.BOLD, 40));
+        admin.setBounds(430, 30, 200, 30);
+        admin.setFont(new Font("BRUSH SCRIPT MT", Font.BOLD, 45));
         add(admin);
 
         scrollLokal.setBounds(30, 100, 1000, 200);
@@ -34,6 +34,8 @@ public class MenuStaffGUI extends JFrame {
         scrollLokal.setVisible(false);
         tableLokal.setModel(AllObjectController.tamucon.DataTamuLokal());
         add(scrollLokal);
+        tableLokal.setEnabled(false);
+        tableLokal.getTableHeader().setReorderingAllowed(false);
 
         scrollLuar.setBounds(30, 100, 1000, 200);
         tableLuar.setVisible(false);
@@ -98,17 +100,18 @@ public class MenuStaffGUI extends JFrame {
 
         back = new JButton("back");
         back.setBounds(50, 500, 100, 30);
-        back.setBackground(Color.red);
+        back.setBackground(Color.ORANGE);
         add(back);
 
         hapus = new JButton("Menu Hapus");
         hapus.setBounds(350, 500, 150, 30);
-        hapus.setBackground(Color.red);
+        hapus.setBackground(Color.ORANGE);
         add(hapus);
-
+        
         setLocationRelativeTo(null);
         setVisible(true);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        
 
         back.addActionListener(new ActionListener() {
             @Override

@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package view;
 
 import ViewCLI.AllObjectController;
@@ -18,10 +14,7 @@ import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 import model.TamuModel;
 
-/**
- *
- * @author HP
- */
+
 public class CheckoutGUI {
 
     JFrame co = new JFrame();
@@ -52,7 +45,7 @@ public class CheckoutGUI {
             }
         });
 
-        lokalLbl = new JLabel("Turis Lokal");
+        lokalLbl = new JLabel("Tamu Lokal");
         lokalLbl.setBounds(100, 50, 180, 40);
         lokalLbl.setFont(new Font("Calibri", Font.BOLD, 30));
         lokalLbl.setForeground(Color.ORANGE);
@@ -96,7 +89,7 @@ public class CheckoutGUI {
             }
         });
 
-        luarLbl = new JLabel("Turis Asing");
+        luarLbl = new JLabel("Tamu Luar");
         luarLbl.setBounds(400, 50, 180, 40);
         luarLbl.setFont(new Font("Calibri", Font.BOLD, 30));
         luarLbl.setForeground(Color.ORANGE);

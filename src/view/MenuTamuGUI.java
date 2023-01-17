@@ -6,6 +6,7 @@ import java.awt.Color;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -49,6 +50,11 @@ public class MenuTamuGUI {
         backBtn.setBackground(Color.red);
         backBtn.setForeground(Color.WHITE);
         menuTamu.add(backBtn);
+        
+        JLabel logo = new JLabel();
+        logo.setIcon(new ImageIcon("C:\\Users\\Dendi\\Downloads\\Apurva_Kempinski_Hotel_Bali-2022_11_10-06_57_52_d1853b510ae4fe16e437f5fc4212708c.jpg"));
+        logo.setBounds(1, -200, 1000, 1050);
+        menuTamu.add(logo);
 
         pesanKamarBtn.addActionListener(new ActionListener() {
             @Override
@@ -62,7 +68,6 @@ public class MenuTamuGUI {
             @Override
             public void actionPerformed(ActionEvent ae) {
                 DisplayKamarGUI dk = new DisplayKamarGUI();
-                AllObjectModel.tamuMdl.initialKamar();
                 menuTamu.dispose();
             }
         });

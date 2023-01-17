@@ -12,9 +12,9 @@ import java.util.ArrayList;
 
 public class TamuModel {
 
-    //array untuk turis lokal 
+    //array untuk tamu lokal 
     ArrayList<ReservasiLokal> arrayLokal = new ArrayList<>();
-    //array untuk turis asing
+    //array untuk tamu asing
     ArrayList<ReservasiLuar> arrayLuar = new ArrayList<>();
     //array kamar
     ArrayList<KamarEntity> arrayKamar = new ArrayList<>();

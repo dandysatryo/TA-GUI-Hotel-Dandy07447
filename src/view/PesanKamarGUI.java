@@ -1,19 +1,15 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package view;
 
 import ViewCLI.AllObjectController;
-//import controller.AllObjectModel;
+
 import entity.KamarEntity;
-//import entity.ReservasiLokal;
-//import entity.ReservasiLuar;
+
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -22,10 +18,7 @@ import javax.swing.JRadioButton;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
-/**
- *
- * @author HP
- */
+
 public class PesanKamarGUI {
 
     JFrame pk = new JFrame();
@@ -42,7 +35,8 @@ public class PesanKamarGUI {
     public PesanKamarGUI() {
         pk.setSize(600, 600);
         pk.setLayout(null);
-        pk.getContentPane().setBackground(Color.darkGray);
+        pk.getContentPane().setBackground(Color.gray);
+        
 
         backBtn = new JButton("Kembali");
         backBtn.setBounds(70, 500, 100, 40);
@@ -52,7 +46,7 @@ public class PesanKamarGUI {
 
         namaLbl = new JLabel("Nama");
         namaLbl.setBounds(70, 25, 100, 100);
-        namaLbl.setForeground(Color.ORANGE);
+        namaLbl.setForeground(Color.red);
         namaLbl.setFont(new Font("Times New Roman", Font.BOLD, 15));
         pk.add(namaLbl);
 
@@ -64,7 +58,7 @@ public class PesanKamarGUI {
 
         noLbl = new JLabel("No Hp");
         noLbl.setBounds(70, 90, 100, 100);
-        noLbl.setForeground(Color.ORANGE);
+        noLbl.setForeground(Color.red);
         noLbl.setFont(new Font("Times New Roman", Font.BOLD, 15));
         pk.add(noLbl);
 
@@ -76,7 +70,7 @@ public class PesanKamarGUI {
 
         alamatLbl = new JLabel("Alamat");
         alamatLbl.setBounds(70, 150, 100, 100);
-        alamatLbl.setForeground(Color.ORANGE);
+        alamatLbl.setForeground(Color.red);
         alamatLbl.setFont(new Font("Times New Roman", Font.BOLD, 15));
         pk.add(alamatLbl);
 
@@ -88,33 +82,34 @@ public class PesanKamarGUI {
 
         lamaLbl = new JLabel("Lama Menginap");
         lamaLbl.setBounds(70, 210, 130, 100);
-        lamaLbl.setForeground(Color.ORANGE);
+        lamaLbl.setForeground(Color.red);
         lamaLbl.setFont(new Font("Times New Roman", Font.BOLD, 15));
         pk.add(lamaLbl);
 
         lamaFld = new JTextField();
         lamaFld.setBounds(70, 270, 100, 30);
-        lamaFld.setForeground(Color.ORANGE);
+        lamaFld.setForeground(Color.red);
         lamaFld.setFont(new Font("Times New Roman", Font.BOLD, 15));
         pk.add(lamaFld);
 
         lokalRd = new JRadioButton("Lokal");
         lokalRd.setBounds(70, 300, 70, 50);
-        lokalRd.setForeground(Color.ORANGE);
-        lokalRd.setBackground(Color.darkGray);
+        lokalRd.setForeground(Color.white);
+        lokalRd.setBackground(Color.red);
         lokalRd.setFont(new Font("Times New Roman", Font.BOLD, 15));
         pk.add(lokalRd);
+        
 
         luarRd = new JRadioButton("Luar");
         luarRd.setBounds(160, 300, 70, 50);
-        luarRd.setForeground(Color.ORANGE);
-        luarRd.setBackground(Color.darkGray);
+        luarRd.setForeground(Color.white);
+        luarRd.setBackground(Color.red);
         luarRd.setFont(new Font("Times New Roman", Font.BOLD, 15));
         pk.add(luarRd);
 
         PASSPORTLbl = new JLabel("PASSPORT");
         PASSPORTLbl.setBounds(70, 330, 140, 100);
-        PASSPORTLbl.setForeground(Color.ORANGE);
+        PASSPORTLbl.setForeground(Color.red);
         PASSPORTLbl.setFont(new Font("Times New Roman", Font.BOLD, 15));
         PASSPORTLbl.setVisible(false);
         pk.add(PASSPORTLbl);
@@ -128,7 +123,7 @@ public class PesanKamarGUI {
 
         KTPLbl = new JLabel("KTP");
         KTPLbl.setBounds(70, 330, 130, 100);
-        KTPLbl.setForeground(Color.ORANGE);
+        KTPLbl.setForeground(Color.red);
         KTPLbl.setFont(new Font("Times New Roman", Font.BOLD, 15));
         KTPLbl.setVisible(false);
         pk.add(KTPLbl);
@@ -142,7 +137,7 @@ public class PesanKamarGUI {
 
         kodeLuar = new JLabel("Kode Kamar");
         kodeLuar.setBounds(350, 30, 130, 100);
-        kodeLuar.setForeground(Color.ORANGE);
+        kodeLuar.setForeground(Color.red);
         kodeLuar.setFont(new Font("Times New Roman", Font.BOLD, 15));
         kodeLuar.setVisible(false);
         pk.add(kodeLuar);
@@ -156,7 +151,7 @@ public class PesanKamarGUI {
 
         kodeLokal = new JLabel("-Kode Kamar");
         kodeLokal.setBounds(350, 30, 130, 100);
-        kodeLokal.setForeground(Color.ORANGE);
+        kodeLokal.setForeground(Color.red);
         kodeLokal.setFont(new Font("Times New Roman", Font.BOLD, 15));
         kodeLokal.setVisible(false);
         pk.add(kodeLokal);
@@ -181,6 +176,10 @@ public class PesanKamarGUI {
         tambahLuar.setForeground(Color.WHITE);
         tambahLuar.setVisible(false);
         pk.add(tambahLuar);
+        JLabel logo = new JLabel();
+        logo.setIcon(new ImageIcon("C:\\Users\\Dendi\\Downloads\\2-a9f712bc010adaeb9951f9ec55cdf80e.jpg"));
+        logo.setBounds(1, -210, 700, 1000);
+        pk.add(logo);
 
 //        textLokal = new JTextArea();
 //        textLokal.setBounds(350, 250, 400, 350);
@@ -288,7 +287,7 @@ public class PesanKamarGUI {
                             AllObjectController.tamucon.inputLokal(nama,
                                     noHp, alamat, lm, ktp, kamarLokal);
                             JOptionPane.showMessageDialog(
-                                    null, "Data berhasil Diinputkan, Sebagai Turis Lokal",
+                                    null, "Data berhasil Diinputkan, Sebagai Tamu Lokal",
                                     "information", JOptionPane.INFORMATION_MESSAGE);
                         } else {
                             JOptionPane.showMessageDialog(
@@ -327,7 +326,7 @@ public class PesanKamarGUI {
                             AllObjectController.tamucon.inputLuar(nama,
                                     noHp, alamat, lm, pp, kamarLuar);
                             JOptionPane.showMessageDialog(
-                                    null, "Data berhasil Diinputkan, Sebagai Turis Asing",
+                                    null, "Data berhasil Diinputkan, Sebagai Tamu Asing",
                                     "information", JOptionPane.INFORMATION_MESSAGE);
                         } else {
                             JOptionPane.showMessageDialog(

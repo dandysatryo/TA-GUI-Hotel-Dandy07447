@@ -20,8 +20,8 @@ public class LoginStaffGUI {
         Lgn.setSize(700, 630);
         Lgn.setLayout(null);
         Lgn.getContentPane().setBackground(Color.darkGray);
-        top = new JLabel("HOTEL KUY");
-        top.setBounds(200, 50, 600, 50);
+        top = new JLabel("<<<<<<< HOTEL G20 >>>>>>>");
+        top.setBounds(60, 10, 750, 50);
         top.setFont(new Font("Times New Roman", Font.BOLD, 40));
         Lgn.add(top);
         top.setForeground(Color.yellow);
@@ -44,18 +44,13 @@ public class LoginStaffGUI {
         passwordlogin.setBounds(180, 360, 280, 36);
         Lgn.add(passwordlogin);
 
-        JLabel logo = new JLabel();
-        logo.setIcon(new ImageIcon("C:\\Users\\Dendi\\Downloads\\the-apurva-kempinski-bali-6.jpeg"));
-        logo.setBounds(1, -200, 1000, 1000);
-        Lgn.add(logo);
+//        login = new JLabel("Login");
+//        login.setBounds(281, 200, 100, 100);
+//        login.setFont(new Font("Times New Roman", Font.BOLD, 30));
+//        Lgn.add(login);
+//        login.setForeground(Color.yellow);
 
-        login = new JLabel("Login");
-        login.setBounds(281, 200, 100, 100);
-        login.setFont(new Font("Times New Roman", Font.BOLD, 30));
-        Lgn.add(login);
-        login.setForeground(Color.yellow);
-
-        Masuk = new JButton("Masuk");
+        Masuk = new JButton("Masuk sebagai Staf");
         Masuk.setBounds(230, 400, 180, 40);
         Masuk.setBackground(Color.ORANGE);
         Lgn.add(Masuk);
@@ -65,10 +60,16 @@ public class LoginStaffGUI {
         UserLoginBtn.setBackground(Color.ORANGE);
         UserLoginBtn.setForeground(Color.RED);
         Lgn.add(UserLoginBtn);
+        
+        JLabel logo = new JLabel();
+        logo.setIcon(new ImageIcon("C:\\Users\\Dendi\\Downloads\\the-apurva-kempinski-bali-6.jpeg"));
+        logo.setBounds(1, -200, 1000, 1050);
+        Lgn.add(logo);
 
         Lgn.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        Lgn.setVisible(true);
         Lgn.setLocationRelativeTo(null);
+        Lgn.setVisible(true);
+        
 
         UserLoginBtn.addActionListener(new ActionListener() {
             @Override

@@ -36,6 +36,8 @@ public class DisplayKamarGUI {
 //        dk.add(tampilTamuBtn);
         ScrollTamu.setBounds(150, 100, 400, 200);
         tabelTamu.setModel(AllObjectController.tamucon.daftarTamu());
+        tabelTamu.getTableHeader().setReorderingAllowed(false);
+        tabelTamu.setEnabled(false);
         dk.add(ScrollTamu);
 
         resetBtn = new JButton("reset Tabel");

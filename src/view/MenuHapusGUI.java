@@ -34,12 +34,12 @@ public class MenuHapusGUI extends JFrame {
 
         hpsBtn = new JButton("Hapus");
         hpsBtn.setBounds(50, 130, 100, 30);
-        hpsBtn.setBackground(Color.red);
+        hpsBtn.setBackground(Color.ORANGE);
         add(hpsBtn);
 
         back = new JButton("back");
         back.setBounds(50, 300, 100, 30);
-        back.setBackground(Color.red);
+        back.setBackground(Color.ORANGE);
         add(back);
 
         back.addActionListener(new ActionListener() {

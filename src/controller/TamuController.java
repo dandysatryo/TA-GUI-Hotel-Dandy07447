@@ -140,7 +140,7 @@ public class TamuController {
         for (ReservasiLokal objek : AllObjectModel.tamuMdl.allLokal()) {
             Object[] data = new Object[10];
             data[0] = AllObjectModel.tamuMdl.allLokal().indexOf(objek);
-            data[1] = objek.getTamuLokal().getLama();
+            data[1] = objek.getTamuLokal().getNama();
             data[2] = objek.getTamuLokal().getNoHp();
             data[3] = objek.getTamuLokal().getAlamat();
             data[4] = objek.getTamuLokal().getLama();
